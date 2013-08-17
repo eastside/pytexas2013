@@ -12,6 +12,8 @@ This can be a [Vagrant](http://www.vagrantup.com/)  box (see Vagrantfile) or thi
 
 Instructions below are for Ubuntu 12.04 64 bit, though they may work for other Debian and Ubuntu installs.
 
+Note: At the PyTexas 2013 talk, John-Michael used DigitalOcean for the box itself. For initial server setup using a DigitalOcean droplet, see [this](https://www.digitalocean.com/community/articles/initial-server-setup-with-ubuntu-12-04).
+
 ## Install packages
 
 We will be using git to pull a django project, pip for our virtualenv and packages, and nginx as our proxy server. First we will update our package list and then install our necessary packages:
