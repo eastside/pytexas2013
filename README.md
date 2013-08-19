@@ -158,7 +158,9 @@ In our polls.conf file, paste the following:
 
 The `-w 2` portion of the file specifies 2 workers. If your app has lots of traffic, it will likely require more workers. You can also specify other types of workers like [gevent](http://docs.gunicorn.org/en/latest/configure.html#worker-class ), but we won't cover that in this talk.
 
-**Note** Based on your project, the `mysite.wsgi:application` will likely change. This is the python path to your wsgi file, along with the wsgi_application to be run. In our case, we can actually run this without the `:application`, but it's better practice to specify the app.
+**Note** Based on your project, the `mysite.wsgi:application` will likely change. This is the python path to your wsgi file, along with the wsgi_application to be run. In our case, we can actually run this without the `:application`, but it's better practice to specify the app. I'm still unsure what this portion of the command actually does.
+
+**Eastside's Note:** I had major trouble with this script. Following these instructions, I thought I needed to change the ':application' portion of the command, but it turned out that I should have left it the way it was. 
 
 Now, we can start our app with:
 
